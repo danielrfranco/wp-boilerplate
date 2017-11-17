@@ -10,13 +10,13 @@ or...
 - Simply install [Koala](http://koala-app.com/)
 
 ## JS Plugins
-- jQuery 3.2.1: Obviously
-- jQuery UI: Dude...
-- SwiperJS: A cool slider
-- WaypointsJS: A useful plugin for creating triggers on scroll
-- FancyboxJS: A lightbox plugin
-- OffCanvasJS: A mobile menu plugin
-- CSS3 Animate It: Awesome and easy CSS3 animations with scrolling triggers
+- **jQuery 3.2.1** (CDN): Obviously.
+- **jQuery UI**: Dude...
+- **SwiperJS 4.0.5** (CDN): A cool slider.
+- **WaypointsJS**: A useful plugin for creating triggers on scroll.
+- **FancyboxJS 3.1.20** (CDN): A lightbox plugin.
+- **OffCanvasJS**: A mobile menu plugin.
+- **CSS3 Animate It**: Awesome and easy CSS3 animations with scrolling triggers.
 
 ## PHP
-- PHPMailer 5.2.23
+- **PHPMailer 5.2.23**: Used for sending emails from server.
