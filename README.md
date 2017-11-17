@@ -1,5 +1,5 @@
 # Wordpress Boilerplate
-A boilerplate for Wordpress theme development, with useful plugins, included php libraries and some other cool stuff . This boilerplate is built with [Bootstrap v4.0.0-beta.2](http://getbootstrap.com/) using Bootstrap 4 source files, so... you might like to check-out their docs before even starting developing hehe.
+A boilerplate for Wordpress theme development, with useful plugins, included php libraries and some other cool stuff. This boilerplate is built with [Bootstrap v4.0.0-beta.2](http://getbootstrap.com/) using Bootstrap 4 source files, so... you might like to check-out their docs before even starting developing hehe.
 
 #### This boilerplate requires some additional tooling:
 - Sass compiler (Libsass or Ruby Sass is supported) for compiling your CSS.
