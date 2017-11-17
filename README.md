@@ -5,7 +5,7 @@ A boilerplate for Wordpress theme development, with useful plugins, included php
 - Sass compiler (Libsass or Ruby Sass is supported) for compiling your CSS.
 - Autoprefixer for CSS vendor prefixing
 
-or
+or...
 
 - Simply install [Koala](http://koala-app.com/)
 
