@@ -1,0 +1,112 @@
+#slider {
+
+	.banner {
+		height: rem(588px);
+		// Medium devices (tablets, 768px and up)
+		@media (min-width: 768px) {
+			height: rem(640px);
+		}
+
+		&#slide-1 {
+			background-image: url(img/inicio/slide-1.jpg);
+			background-size: cover;
+			background-position: 92% center;
+		}
+		&#slide-2 {
+			background-image: url(img/inicio/slide-2.jpg);
+			background-size: cover;
+			background-position: 90% center;
+		}
+		&#slide-3 {
+			background-image: url(img/inicio/slide-3.jpg);
+			background-size: cover;
+			background-position: right;
+		}
+
+		h1 {
+			font-family: $special-type-2;
+			font-weight: 700;
+			font-size: rem(25px);
+			color: $white;
+			-webkit-font-smoothing: antialiased;
+			-moz-webkit-font-smoothing: antialiased;
+			-ms-webkit-font-smoothing: antialiased;
+			-o-webkit-font-smoothing: antialiased;
+			font-smoothing: antialiased;
+			margin-bottom: rem(10px);
+
+			// Medium devices (tablets, 768px and up)
+			@media (min-width: 768px) {
+				font-size: rem(38px);
+				margin-bottom: rem(40px);
+			}
+		}
+
+		p {
+			font-size: 0.8rem;
+			margin-bottom: rem(10px);
+
+			// Medium devices (tablets, 768px and up)
+			@media (min-width: 768px) {
+				font-size: rem(19px);
+				margin-bottom: 1rem;
+			}
+		}
+
+		.btn {
+			text-align: left;
+			border-radius: 0;
+		}
+	}
+}
+
+#acerca-de {
+
+	.cuadro-acerca {
+		background-color: rgba(#f7f7f7,0.5);
+		position: relative;
+	    z-index: 1;
+	    border: solid rem(5px) #f7f7f7;
+	    padding: rem(35px) 0;
+
+	    // Medium devices (tablets, 768px and up)
+		@media (min-width: 768px) {
+			padding: rem(70px) 0;
+			top: -30px;
+		}
+
+		img.img-acerca-de-nosotros {
+			max-width: 100px;
+
+			// Medium devices (tablets, 768px and up)
+			@media (min-width: 768px) {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+#home-nuestros-servicios {
+	padding: rem(50px) 0 rem(12px);
+	background-color: map-get($colors, yellow);
+	margin-bottom: rem(29px);
+
+	.servicio-cuadro {
+		background-color: $white;
+		padding: rem(28px);
+		border-radius: 8px;
+		height: 100%;
+
+		.servicio {
+			display: inline;
+			font-size: rem(20px);
+			font-family: $special-type;
+			-webkit-webkit-font-smoothing: antialiased;
+			-moz-webkit-font-smoothing: antialiased;
+			-ms-webkit-font-smoothing: antialiased;
+			-o-webkit-font-smoothing: antialiased;
+			webkit-font-smoothing: antialiased;
+			color: $main-color;
+		}
+	}
+}

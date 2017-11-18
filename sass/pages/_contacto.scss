@@ -1,0 +1,135 @@
+#banner-contacto {
+	background-image: url(img/contacto/banner.jpg);
+	background-position: 75% center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: rem(410px);
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+		height: rem(450px);
+	}
+
+	h1 {
+		padding-bottom: rem(17px);
+		display: inline-block;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 50%;
+			border-bottom: solid 2px white;
+		}
+	}
+
+	ul {
+		margin-left: rem(24px);
+
+		> li {
+			font-size: rem(16px);
+		}
+	}
+}
+
+#informacion {
+	background: $main-color;
+	background: -moz-linear-gradient(top, $main-color 0%, #04206e 100%);
+	background: -webkit-linear-gradient(top, $main-color 0%,#04206e 100%);
+	background: linear-gradient(to bottom, $main-color 0%,#04206e 100%);
+	color: white;
+	padding-top: rem(25px);
+	padding-bottom: rem(50px);
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.3rem;
+		}
+	}
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+		padding-top: rem(50px);
+	}
+
+	.cuadro-informacion {
+		background-color: white;
+		color: $main-color;
+		border-radius: 10px;
+
+		h3 {
+			font-family: $special-type;
+			font-weight: 400;
+			font-size: rem(22px);
+			text-transform: uppercase;
+			-webkit-font-smoothing: antialiased;
+			padding-top: rem(24px);
+			padding-bottom: rem(24px);
+			margin: 0;
+		}
+
+		h4 {
+			font-family: $special-type;
+			font-weight: 400;
+			font-size: rem(17px);
+			font-style: italic;
+			text-transform: uppercase;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		ul {
+			margin-left: 0;
+			margin-bottom: 0;
+
+			// Medium devices (tablets, 768px and up)
+			@media (min-width: 768px) {
+				margin-left: rem(36px);
+			}	
+
+			li {
+				font-size: rem(16px);
+
+				&.telefono {
+					font-family: $special-type;
+					font-size: rem(24px);
+					font-style: italic;
+					-webkit-font-smoothing: antialiased;
+				}
+
+				i {
+					color: map-get($colors, yellow);
+					font-size: rem(24px);
+				}
+			}
+		}
+
+		.linea-urgencia {
+			padding-top: rem(38px);
+			padding-bottom: rem(35px);
+			background-color: #ebebeb;
+		}
+
+		.direccion {
+			padding-top: rem(22px);
+			padding-bottom: rem(36px);
+		}
+	}
+}
+
+#map {
+
+	#bodyContent {
+		font-family: $default-type;
+		font-weight: 300;
+		font-size: rem(12.5px);
+
+		.btn {
+			font-family: $default-type;
+			-webkit-font-smoothing: auto;
+			font-size: rem(12.5px);
+			font-weight: 700;
+			color: white;
+			background-color: map-get($colors, pink);
+			padding: rem(8px);
+		}
+	}
+}

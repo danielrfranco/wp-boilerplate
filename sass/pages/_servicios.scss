@@ -1,0 +1,196 @@
+#banner-servicios {
+	background-color: #264495;
+	background-image: url(img/servicios/banner.png);
+	background: url(img/servicios/banner.png), -moz-linear-gradient(top, #264495 0%, #04206e 100%);
+	background: url(img/servicios/banner.png), -webkit-linear-gradient(top, #264495 0%,#04206e 100%);
+	background: url(img/servicios/banner.png), linear-gradient(to bottom, #264495 0%,#04206e 100%);
+	background-position: 90% 40%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: rem(450px);
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+		background-position: 90% bottom;
+	}
+
+	.cuadro {
+		background-color: white;
+		color: $main-color;
+	}
+}
+
+#nuestros-servicios {
+	padding: rem(24px) 0 rem(20px);
+	background-color: map-get($colors, yellow);
+	background: -moz-linear-gradient(top, map-get($colors, yellow) 0%, #ff9e07 100%);
+	background: -webkit-linear-gradient(top, map-get($colors, yellow) 0%,#ff9e07 100%);
+	background: linear-gradient(to bottom, map-get($colors, yellow) 0%,#ff9e07 100%);
+	margin-bottom: rem(29px);
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+		padding: rem(50px) 0 rem(42px);
+	}
+
+	.paneles {
+		margin-top: rem(20px);
+
+		// Medium devices (tablets, 768px and up)
+		@media (min-width: 768px) {
+			margin-top: rem(48px);
+		}
+
+		.nav {
+			border-radius: 8px;
+			overflow: hidden;
+
+			.nav-item {
+				background-color: white;
+
+				&:last-child .nav-link .row {
+					border-right: none;
+				}
+
+				.nav-link {
+					padding: .5rem 0;
+					border-radius: 0;
+
+					img.blanco {
+						display: none;
+					}
+
+					&.active {
+						background-color: $main-color;
+
+						img {
+							&:not(.blanco) {
+								display: none;
+							}
+							&.blanco {
+								display: inline;
+							}
+						}
+					}
+
+					.row {
+
+						// Large devices (desktops, 992px and up)
+						@media (min-width: 992px) {
+							border-right: solid rem(2px) map-get($colors, yellow);
+						}
+					}
+				}
+
+				.servicio {
+					font-family: $special-type;
+					font-size: rem(20px);
+					-webkit-font-smoothing: antialiased;
+					-moz-webkit-font-smoothing: antialiased;
+					-ms-webkit-font-smoothing: antialiased;
+					-o-webkit-font-smoothing: antialiased;
+					webkit-font-smoothing: antialiased;
+					max-width: 280px;
+
+					&::after {
+						content: '\f0d7';
+						font-family: $icon;
+						margin-left: rem(20px);
+					}
+				}
+			}
+		}
+
+		.tab-content {
+			background-color: map-get($colors, pink);
+			color: white;
+
+			.tab-pane {
+				padding-top: rem(26px);
+				padding-bottom: rem(26px);
+				font-size: rem(17px);
+				font-weight: 700;
+
+				.btn {
+					font-family: $special-type-2;
+					font-weight: 700;
+					font-size: rem(24px);
+					color: white;
+					border: solid rem(5px) white;
+					border-radius: 8px;
+					-webkit-font-smoothing: antialiased;
+					-moz-webkit-font-smoothing: antialiased;
+					-ms-webkit-font-smoothing: antialiased;
+					-o-webkit-font-smoothing: antialiased;
+					webkit-font-smoothing: antialiased;
+				}
+			}
+		}
+	}
+
+	#accordion {
+
+		.card {
+			border: none;
+		}
+
+		.card-header {
+			font-family: $special-type;
+			font-size: rem(20px);
+			-webkit-font-smoothing: antialiased;
+
+			&.active {
+				background-color: $main-color;
+			}
+
+			img.blanco {
+				display: none;
+			}
+
+			a {
+				background-color: white;
+				text-decoration: none;
+
+				&:not(.collapsed) {
+					color: white;
+
+					img.blanco {
+						display: inline;
+					}
+					img:not(.blanco) {
+						display: none;
+					}
+				}
+
+				.servicio::after {
+					content: '\f0d7';
+					font-family: $icon;
+					margin-left: 0.8rem;
+				}
+			}	
+		}
+
+		.card-body {
+			background-color: map-get($colors, pink);
+			color: white;
+			font-weight: 700;
+			font-size: rem(17px);
+
+			.btn {
+				font-family: $special-type-2;
+				font-size: rem(24px);
+				font-weight: 700;
+				color: white;
+				border: solid 5px white;
+				border-radius: 8px;
+				-webkit-font-smoothing: antialiased;
+
+				&::after {
+					content: '\f0da';
+					font-family: $icon;
+					margin-left: 0.8rem;
+				}
+			}
+		}
+	}
+}
