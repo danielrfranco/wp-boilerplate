@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*!
+Theme Name: Cirugía Pediátrica Integral
+Author: El equipo de Ja! Estudio
+Author URI: http://grupojaestudio.com/
+Description: Sitio web diseñado y programado especialmente para Cirugía Pediátrica Integral
+Version: 1.0
+Text Domain: pediatras
+*/
+
+/***
+ *       ____  _     _     _     _     _      __     __                                _     _ _ 
+ *      / __ \| |   | |   | |   | |   | |     \ \   / /                               | |   | | |
+ *     | |  | | |__ | |__ | |__ | |__ | |__    \ \_/ /__  __ _  __ _  __ _  __ _  __ _| |__ | | |
+ *     | |  | | '_ \| '_ \| '_ \| '_ \| '_ \    \   / _ \/ _` |/ _` |/ _` |/ _` |/ _` | '_ \| | |
+ *     | |__| | | | | | | | | | | | | | | | |    | |  __/ (_| | (_| | (_| | (_| | (_| | | | |_|_|
+ *      \____/|_| |_|_| |_|_| |_|_| |_|_| |_|    |_|\___|\__,_|\__,_|\__,_|\__,_|\__,_|_| |_(_|_)
+ *                                                                                               
+ *                                                                                               
+ */
+
+/* Bootstrap =================================== */
+@import 'bootstrap/bootstrap';
+
+/* Rem ========================================= */
+@import 'rem';
+
+/* Variables =================================== */
+@import 'variables';
+
+/* General ===================================== */
+@import 'general';
+
+/* Header ====================================== */
+@import 'header';
+
+/* Banner ====================================== */
+@import 'banner';
+
+/* Buttons ===================================== */
+@import 'buttons';
+
+/* Custom Elements ============================= */
+@import 'custom-elements';
+
+/* Form ======================================== */
+@import 'form';
+
+/* Footer ====================================== */
+@import "footer";
+
+/* Essentials ================================== */
+@import 'essentials';
+
+/* Swiper Custom =============================== */
+@import 'swiper-custom';
+
+/* Media ======================================= */
+@import 'media';
+
+/* Pages ======================================= */
+@import 'pages';

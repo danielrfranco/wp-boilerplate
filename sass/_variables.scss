@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+//Your rem default value
+$rem-baseline: 19px;
+
+//Your set of colors for your theme
+$colors: (
+	blue: #264495,
+	yellow: #ffc114,
+	pink: #ef6596,
+	white: #ffffff,
+	grey: #515151
+);
+
+// Your main colors
+$main-color: map-get($colors, blue);
+$secondary-color: map-get($colors, pink);
+$default-color: map-get($colors, grey);
+
+// And yeah, the white color
+$white: map-get($colors, white);
+$default-background: $white;
+
+// Types, you need to call these from footer.php (Google Fonts)
+$icon: 'FontAwesome';
+$default-type: 'Quicksand', sans-serif;
+$special-type: 'Fredoka One', sans-serif;
+$special-type-2: 'Passion One', sans-serif;

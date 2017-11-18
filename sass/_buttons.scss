@@ -1,0 +1,26 @@
+// Style all your button here
+
+.btn {
+	cursor: pointer;
+	font-family: $special-type;
+	-webkit-font-smoothing: antialiased;
+	-moz-webkit-font-smoothing: antialiased;
+	-ms-webkit-font-smoothing: antialiased;
+	-o-webkit-font-smoothing: antialiased;
+	webkit-font-smoothing: antialiased;
+
+	&.pink {
+		color: white;
+		background-color: map-get($colors, pink);
+	}
+
+	&.blue {
+		color: white;
+		background-color: map-get($colors, blue);
+	}
+
+	&.yellow {
+		color: white;
+		background-color: map-get($colors, yellow);
+	}
+}

@@ -1,0 +1,45 @@
+html {
+	// check _variables and _rem for dynamic rem values
+	@include rem-baseline;
+}
+
+body {
+	font-size: rem(19px);
+	font-weight: 400;
+	background-color: $default-background; 
+	color: $default-color;
+	font-family: $default-type;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+a {
+	transition: all 0.2s ease;
+	color: $main-color;
+}
+
+h1 {
+	font-family: $special-type;
+	-webkit-font-smoothing: antialiased;
+
+	// Medium devices (tablets, 767px and up)
+	@media (max-width: 767px) {
+		font-size: 1.8rem;
+	}
+}
+
+strong {
+	font-weight: 700;
+}
+
+#map {
+    height: 424px;
+    width: 100%;
+}
+.map-title{
+    color: $main-color;
+    font-style: italic;
+}

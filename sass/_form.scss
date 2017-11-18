@@ -1,0 +1,43 @@
+input, textarea {
+    width: 100%;
+    display: inline-block;
+    font-size: rem(15px);
+    border: none;
+    border-radius: 30px;
+    background-color: $white;
+    padding: rem(14px) rem(17px);
+    font-weight: 700;
+    color: $default-color;
+}
+
+::placeholder {
+    font-size: rem(15px);
+    font-weight: 700;
+    color: $default-color;
+}
+
+#enviar {
+    background-color: map-get($colors, yellow);
+    font-family: $special-type-2;
+    font-size: rem(25px);
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+
+    &::before {
+        content: '\f1d8';
+        font-family: $icon;
+        margin-right: rem(22px);
+    }
+}
+
+.feedback {
+    display: none;
+    text-align: center;
+    font-weight: 400;
+}

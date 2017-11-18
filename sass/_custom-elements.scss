@@ -1,0 +1,137 @@
+//List Group
+.list-group {
+    flex-direction: inherit;
+    -webkit-padding-start: 40px;
+}
+
+.list-group-item {
+    position: relative;
+    padding: 0;
+    margin-bottom: -1px;
+    background-color: inherit;
+    display: list-item;
+    border: none;
+}
+
+//Decorated Header
+.fancy-container {
+	overflow: hidden;
+
+	h3 {
+		display: inline-block;
+		padding: 0 2.125rem;
+		position: relative;
+
+		&::before,
+		&::after {
+			background: $white;
+			content: "";
+			display: inline-block;
+			height: 3px;
+			position: absolute;
+			top: 50%;
+			width: 400%;
+		}
+
+		&::before {
+			right: 100%;
+		}
+
+		&::after {
+			left: 100%;
+		}
+
+		&.left {
+			&::before {
+				background: $white;
+				content: "";
+				display: inline-block;
+				height: 3px;
+				position: absolute;
+				top: 50%;
+				width: 400%;
+			}
+			&::after {
+				display: none;
+			}
+		}
+
+		&.right {
+			&::after {
+				background: $white;
+				content: "";
+				display: inline-block;
+				height: 3px;
+				position: absolute;
+				top: 50%;
+				width: 400%;
+			}
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+
+// Fat Horizontal Line
+hr.fat {
+	border-top: 2px solid;
+}
+
+.t-shadow {
+	text-shadow: 4px 4px 5px rgba(#000000, 0.3);
+}
+
+.box-shadow {
+	 -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+//Subrayado de Headers
+.under {
+	position: relative;
+	padding: rem(10px) 0;
+
+	&::after {
+		content: '';
+		width: rem(53px);
+		height: rem(6px);
+		position: absolute;
+		bottom: 0;
+	}
+
+	&.left::after {
+		left: 0;
+		right: 0;
+		margin: auto;
+
+		// Medium devices (tablets, 768px and up)
+		@media (min-width: 768px) {
+			right: initial;
+			margin: 0;
+		}
+	}
+
+	&.center::after {
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	&.yellow::after {
+		background-color: map-get($colors, yellow);
+	}
+
+	&.white::after {
+		background-color: map-get($colors, white);
+	}
+
+	&.yellow::after {
+		background-color: map-get($colors, yellow);
+	}
+
+	&.pink::after {
+		background-color: map-get($colors, pink);
+	}
+}

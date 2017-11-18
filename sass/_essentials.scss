@@ -1,0 +1,170 @@
+// Think of these as helper classes
+
+// The following classes work very similarly as Bootstrap margin and padding helper classes
+// These classes rely in 'quarters' or REM.
+// Example: my-10q means: margin in Y (top and bottom) is 10 quarters of rem = 2.5rem
+@for $i from 1 through 20 {
+	$value: $i * 0.25;
+	.my-#{$i}q {
+		margin-top: #{$value}rem;
+		margin-bottom: #{$value}rem;
+	}
+}
+
+@for $i from 1 through 20 {
+	$value: $i * 0.25;
+	.mt-#{$i}q {
+		margin-top: #{$value}rem;
+	}
+}
+
+@for $i from 1 through 20 {
+	$value: $i * 0.25;
+	.mb-#{$i}q {
+		margin-bottom: #{$value}rem;
+	}
+}
+
+@for $i from 1 through 20 {
+	$value: $i * 0.25;
+	.py-#{$i}q {
+		padding-top: #{$value}rem;
+		padding-bottom: #{$value}rem;
+	}
+}
+
+@for $i from 1 through 20 {
+	$value: $i * 0.25;
+	.px-#{$i}q {
+		padding-left: #{$value}rem;
+		padding-right: #{$value}rem;
+	}
+}
+
+
+// Take some time to check these classes also
+.style-normal {
+	font-style: normal !important;
+}
+
+.default-bg{
+	background-color: $default-background;
+}
+.white-bg {
+	background-color: $white;
+}
+.white-txt {
+	color: $white !important;
+}
+
+.default-color-bg {
+	background-color: $default-color;
+}
+.default-color-txt {
+	color: $default-color;
+}
+
+.main-color-bg {
+	background-color: $main-color;
+}
+.main-color-txt {
+	color: $main-color !important;
+}
+
+.secondary-color-bg {
+	background-color: $secondary-color;
+}
+.secondary-color-txt {
+	color: $secondary-color !important;
+}
+
+.weight-thin {
+	font-weight: 100 !important;
+}
+.weight-extralight {
+	font-weight: 200 !important;
+}
+.weight-light {
+	font-weight: 300 !important;
+}
+.weight-regular {
+	font-weight: 400 !important;
+}
+.weight-medium {
+	font-weight: 500 !important;
+}
+.weight-semibold {
+	font-weight: 600 !important;
+}
+.weight-bold {
+	font-weight: 700 !important;
+}
+.weight-extrabold {
+	font-weight: 800 !important;
+}
+.weight-black {
+	font-weight: 900 !important;
+}
+
+.image-background {
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: $white;
+}
+
+.image-background-lt {
+	@extend .image-background;
+	background-position: left top;
+}
+
+.image-background-lc {
+	@extend .image-background;
+	background-position: left center;
+}
+
+.image-background-lb {
+	@extend .image-background;
+	background-position: left bottom;
+}
+
+.image-background-ct {
+	@extend .image-background;
+	background-position: center top;
+}
+
+.image-background-cc {
+	@extend .image-background;
+	background-position: center center;
+}
+
+.image-background-cb {
+	@extend .image-background;
+	background-position: center bottom;
+}
+
+.image-background-rt {
+	@extend .image-background;
+	background-position: right top;
+}
+
+.image-background-rc {
+	@extend .image-background;
+	background-position: right center;
+}
+
+.image-background-rb {
+	@extend .image-background;
+	background-position: right bottom;
+}
+
+pre {
+  	margin-left: 50px;
+}
+
+.special-type {
+	font-family: $special-type !important;
+}
+
+.default-type {
+	font-family: $default-type !important;
+}
