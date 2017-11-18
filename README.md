@@ -25,10 +25,10 @@ or...
 Very soon!
 
 ## FAQ
-**Can I use this boilerplate for personal or commercial websites/web projects?**
+**Can I use this boilerplate for personal or commercial websites/web projects?**<br>
 Sure, you can use both of personal and commercial websites/web projects.
 
-**Is a attribution link required?**
+**Is a attribution link required?**<br>
 No, not required. (Though very much appreciated)
 
 ## Donations
