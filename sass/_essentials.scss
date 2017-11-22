@@ -1,24 +1,22 @@
-// Think of these as helper classes
+/* 
+Think of these as helper classes.
 
-// The following classes work very similarly as Bootstrap margin and padding helper classes
-// These classes rely in 'quarters' or REM.
-// Example: my-10q means: margin in Y (top and bottom) is 10 quarters of rem = 2.5rem
+The following classes work very similarly as Bootstrap margin and padding helper classes
+These classes rely in 'quarters' or REM.
+Example: my-10q means: margin in Y (top and bottom) is 10 quarters of rem = 2.5rem
+*/
 @for $i from 1 through 20 {
 	$value: $i * 0.25;
 	.my-#{$i}q {
 		margin-top: #{$value}rem;
 		margin-bottom: #{$value}rem;
 	}
-}
 
-@for $i from 1 through 20 {
 	$value: $i * 0.25;
 	.mt-#{$i}q {
 		margin-top: #{$value}rem;
 	}
-}
 
-@for $i from 1 through 20 {
 	$value: $i * 0.25;
 	.mb-#{$i}q {
 		margin-bottom: #{$value}rem;
@@ -31,16 +29,13 @@
 		padding-top: #{$value}rem;
 		padding-bottom: #{$value}rem;
 	}
-}
 
-@for $i from 1 through 20 {
 	$value: $i * 0.25;
 	.px-#{$i}q {
 		padding-left: #{$value}rem;
 		padding-right: #{$value}rem;
 	}
 }
-
 
 // Take some time to check these classes also
 .style-normal {
@@ -167,4 +162,61 @@ pre {
 
 .default-type {
 	font-family: $default-type !important;
+}
+
+/*
+This classes extend the bootstrap grid and adds support for easy 5ths grid columns
+*/
+.col-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths,
+.col-xl-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-5ths {
+    -webkit-box-flex: 0;
+	-ms-flex: 0 0 20%;
+	flex: 0 0 20%;
+	max-width: 20%;
+}
+
+@media (min-width: map-get($grid-breakpoints, sm)) {
+    .col-sm-5ths {
+        -webkit-box-flex: 0;
+	    -ms-flex: 0 0 20%;
+	    flex: 0 0 20%;
+	    max-width: 20%;
+    }
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+    .col-md-5ths {
+        -webkit-box-flex: 0;
+	    -ms-flex: 0 0 20%;
+	    flex: 0 0 20%;
+	    max-width: 20%;
+    }
+}
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+    .col-lg-5ths {
+        -webkit-box-flex: 0;
+	    -ms-flex: 0 0 20%;
+	    flex: 0 0 20%;
+	    max-width: 20%;
+    }
+}
+
+@media (min-width: map-get($grid-breakpoints, xl)) {
+    .col-xl-5ths {
+        -webkit-box-flex: 0;
+	    -ms-flex: 0 0 20%;
+	    flex: 0 0 20%;
+	    max-width: 20%;
+    }
 }
