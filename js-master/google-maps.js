@@ -114,7 +114,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: business,
         map: map,
-        icon: iconoMarcador
+        icon: markerIcon
     });
 
     info.open(map, marker);
