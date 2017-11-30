@@ -1,19 +1,21 @@
-// Extra small devices (portrait phones, less than 576px)
+// Extra small devices (portrait phones)
 // No media query since this is the default in Bootstrap
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+// Small devices (landscape phones)
+@media (min-width: map-get($grid-breakpoints, sm)) {}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+// Medium devices (tablets)
+@media (min-width: map-get($grid-breakpoints, md)) {}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+// Large devices (desktops)
+@media (min-width: map-get($grid-breakpoints, lg)) {}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
-
-
+// Extra large devices (large desktops)
+@media (min-width: map-get($grid-breakpoints, xl)) {}
 
 
-// this is just for reference
+/* 
+Note: 
+This codes are for reference (for you to do copy/paste where needed)
+You need to set variables in sass/bootstrap/_variables.scss with the prefered screen sizes before using this.
+*/
