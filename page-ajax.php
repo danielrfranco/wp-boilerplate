@@ -8,23 +8,23 @@ get_template_part( 'php/PHPMailer-master/PHPMailerAutoload');
 
 get_template_part( 'php/partials/google', 'recaptcha' );
 
-$from = 'no-reply@cirugiapediatricaintegral.com';
+$from = 'no-reply@cloudcars.mx';
+$main_email = 'talento@cloudcars.mx';
+$main_name = 'Talento Cloud Cars';
 
-$main_email = 'danielfranco9132@gmail.com';
-$main_name = 'Daniel Franco';
+$developer_email = 'daniel@jaestudio.net';
+$developer_name = 'Daniel Franco';
 
 $mail = new PHPMailer;
 $mail->CharSet = 'UTF-8';
-
 if ( isset($_POST['ajax']) ) {
 	
 	switch ($_POST['ajax']) {
 		case 'contacto':
-
 			if (recaptcha($_POST['captcha'])) {
-
 				$mail->setFrom($from, $_POST['nombre']);
 				$mail->addAddress($main_email, $main_name);
+				$mail->addBCC($developer_email, $developer_name);
 				$mail->addReplyTo($_POST['email'], $_POST['nombre']);
 
 				$mail->isHTML(true);                                  // Set email format to HTML
