@@ -83,25 +83,6 @@ header {
     	}
     }
 
-    .urgencias {
-        -webkit-webkit-font-smoothing: antialiased;
-        -moz-webkit-font-smoothing: antialiased;
-        -ms-webkit-font-smoothing: antialiased;
-        -o-webkit-font-smoothing: antialiased;
-        webkit-font-smoothing: antialiased;
-        background-color: $white;
-        border-radius: 0 0 10px 10px;
-        color: $main-color;
-        font-size: rem(18px);
-        font-weight: 700;
-        padding: 0.1rem rem(53px);
-
-        small {
-            font-weight: 400;
-            font-size: rem(12px);
-        }
-    }
-
     nav.menu-principal {
 
     	display: none;
