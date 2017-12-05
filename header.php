@@ -41,7 +41,7 @@ ob_start("ob_html_compress");
 
     <body>
         <header class="container-fluid">
-            <div class="row px-md-3 align-items-center align-items-md-start">
+            <div class="row px-md-3 align-items-center">
                 <div class="col-2 white-bg py-2 text-center logo-container">
                     <a href="<?php echo home_url() ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.svg" class="logo"></a>
                 </div>
