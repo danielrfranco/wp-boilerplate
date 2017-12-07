@@ -1,4 +1,23 @@
-//List Group
+/*
+I use this file for styling some special elements used in the whole site, like:
+- The map
+- Some nice classes for headers
+- Shadows
+- Any other stuff
+*/
+
+
+// Map
+#map {
+    height: 424px;
+    width: 100%;
+}
+.map-title{
+    color: $main-color;
+    font-style: italic;
+}
+
+// List Group
 .list-group {
     flex-direction: inherit;
     -webkit-padding-start: 40px;
@@ -13,11 +32,11 @@
     border: none;
 }
 
-//Decorated Header
+// Decorated Header
 .fancy-container {
 	overflow: hidden;
 
-	h3 {
+	.fancy-element {
 		display: inline-block;
 		padding: 0 2.125rem;
 		position: relative;
@@ -73,11 +92,7 @@
 	}
 }
 
-// Fat Horizontal Line
-hr.fat {
-	border-top: 2px solid;
-}
-
+// Shadows
 .t-shadow {
 	text-shadow: 4px 4px 5px rgba(#000000, 0.3);
 }
@@ -88,7 +103,7 @@ hr.fat {
 	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
 }
 
-//Subrayado de Headers
+// Headers underline
 .under {
 	position: relative;
 	padding: rem(10px) 0;
@@ -106,8 +121,8 @@ hr.fat {
 		right: 0;
 		margin: auto;
 
-		// Medium devices (tablets, 768px and up)
-		@media (min-width: 768px) {
+		// Medium devices (tablets)
+		@media (min-width: map-get($grid-breakpoints, md)) {
 			right: initial;
 			margin: 0;
 		}

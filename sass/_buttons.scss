@@ -3,24 +3,10 @@
 .btn {
 	cursor: pointer;
 	font-family: $special-type;
+	max-width: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-webkit-font-smoothing: antialiased;
 	-ms-webkit-font-smoothing: antialiased;
 	-o-webkit-font-smoothing: antialiased;
-	webkit-font-smoothing: antialiased;
-
-	&.pink {
-		color: white;
-		background-color: map-get($colors, pink);
-	}
-
-	&.blue {
-		color: white;
-		background-color: map-get($colors, blue);
-	}
-
-	&.yellow {
-		color: white;
-		background-color: map-get($colors, yellow);
-	}
+	font-smoothing: antialiased;
 }

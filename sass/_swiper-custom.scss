@@ -6,8 +6,8 @@
     padding: 20px 0 20px 10px;
     height: auto !important;
 
-    // Medium devices (tablets, 768px and up)
-	@media (min-width: 768px) {
+    // Medium devices (tablets)
+	@media (min-width: map-get($grid-breakpoints, md)) {
 		background-color: white;
 	}
 
@@ -27,8 +27,8 @@
 	    right: -94%;
 	    top: 0;
 
-	    // Medium devices (tablets, 768px and up)
-		@media (min-width: 768px) {
+	    // Medium devices (tablets)
+		@media (min-width: map-get($grid-breakpoints, md)) {
 			border-left: solid 25px white;
 		}
 	}
