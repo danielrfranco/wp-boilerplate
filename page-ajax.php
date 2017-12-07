@@ -8,12 +8,19 @@ get_template_part( 'php/PHPMailer-master/PHPMailerAutoload');
 
 get_template_part( 'php/partials/google', 'recaptcha' );
 
-$from = 'no-reply@cloudcars.mx';
-$main_email = 'talento@cloudcars.mx';
-$main_name = 'Talento Cloud Cars';
+/*
+ * The sender email domain MUST be the same as the domain it is sended from.
+ *
+ * Eg. If the user sends form data from http://domain.com/contact/ the sender email MUST be {any}@domain.com
+ * Any other domain other than yours, may cause SPAM blocking!
+ */
+$from = 'no-reply@email.com';
 
-$developer_email = 'daniel@jaestudio.net';
-$developer_name = 'Daniel Franco';
+$main_email = 'client@email.com';
+$main_name = 'Client Name';
+
+$developer_email = 'developer@email';
+$developer_name = 'Developer Name';
 
 $mail = new PHPMailer;
 $mail->CharSet = 'UTF-8';
