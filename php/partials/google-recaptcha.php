@@ -1,21 +1,18 @@
 <?php
-function recaptcha($respuesta) {
+function recaptcha($response) {
     
-    //Tu clave secretra de recaptcha
-    $clavesecreta='6Lco6jgUAAAAAEYCvI07KxXABJKc4Y_gd17S8M6t';
-    //La url preparada para enviar
-    $urlrecaptcha="https://www.google.com/recaptcha/api/siteverify?secret=$clavesecreta&response=$respuesta";
+    //Your secret key
+    $secret='6Lco6jgUAAAAAEYCvI07KxXABJKc4Y_gd17S8M6t';
 
-    //Leemos la respuesta (suele funcionar solo en remoto)
-    $respuesta = file_get_contents($urlrecaptcha) ;
+    $urlrecaptcha="https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response";
 
-    //Comprobamos el success
-    $dividir=explode('"success":',$respuesta);
-    $obtener=explode(',',$dividir[1]);
+    $response = file_get_contents($urlrecaptcha) ;
 
-    //Obtenemos el estado
-    $estado=trim($obtener[0]);
+    $divide=explode('"success":',$response);
+    $obtain=explode(',',$divide[1]);
 
-    return $estado; 
+    $status=trim($obtain[0]);
+
+    return $status; 
 }
 ?>
