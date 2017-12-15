@@ -1,78 +1,117 @@
-/* 
-Think of these as helper classes.
+/* ======================================================================================== *
+ * Think of these as helper classes.                                                        *
+ * These are a great help for fast prototyping and will save you a loooot of time building  *
+ * your website.                                                                            *
+ *                                                                                          *
+ * Detailed documentation coming very soon.                                                 *
+ * In the meantime, have fun!                                                               *
+ * ======================================================================================== */
 
-The following classes work very similarly as Bootstrap margin and padding helper classes
-These classes rely in 'quarters' or REM.
-Example: my-10q means: margin in Y (top and bottom) is 10 quarters of rem = 2.5rem
-*/
+
+/* ======================================================================================== *
+ * The following classes work very similarly as Bootstrap margin and padding helper classes *
+ * These classes rely in 'quarters' of REM.                                                 *
+ * Example: my-10q means: margin in Y (top and bottom) is 10 quarters of rem = 2.5rem       *
+ * ======================================================================================== */
+
+/* Margin helpers ============================ */
 @for $i from 1 through 20 {
 	$value: $i * 0.25;
+
+	.mt-#{$i}q,
 	.my-#{$i}q {
-		margin-top: #{$value}rem;
-		margin-bottom: #{$value}rem;
+		margin-top: #{$value}rem !important;
 	}
 
-	$value: $i * 0.25;
-	.mt-#{$i}q {
-		margin-top: #{$value}rem;
+	.mb-#{$i}q,
+	.my-#{$i}q {
+		margin-bottom: #{$value}rem !important;
 	}
 
-	$value: $i * 0.25;
-	.mb-#{$i}q {
-		margin-bottom: #{$value}rem;
+	.ml-#{$i}q,
+	.mx-#{$i}q {
+		margin-left: #{$value}rem !important;
+	}
+
+	.mr-#{$i}q,
+	.mx-#{$i}q {
+		margin-right: #{$value}rem !important;
 	}
 }
 
+/* Padding helpers =========================== */
 @for $i from 1 through 20 {
 	$value: $i * 0.25;
+
+	.pt-#{$i}q
 	.py-#{$i}q {
-		padding-top: #{$value}rem;
-		padding-bottom: #{$value}rem;
+		padding-top: #{$value}rem !important;
 	}
 
-	$value: $i * 0.25;
+	.pb-#{$i}q
+	.py-#{$i}q {
+		padding-bottom: #{$value}rem !important;
+	}
+
+	.pl-#{$i}q
 	.px-#{$i}q {
-		padding-left: #{$value}rem;
-		padding-right: #{$value}rem;
+		padding-left: #{$value}rem !important;
+	}
+
+	.pr-#{$i}q
+	.px-#{$i}q {
+		padding-right: #{$value}rem !important;
 	}
 }
 
-// Take some time to check these classes also
-.style-normal {
-	font-style: normal !important;
+/* ================================================================================== *
+ * Creates classes .txt-{$color} and .bg-{$color} for every color you declare at the  *
+ * $colors map in _variables.scss                                                     *
+ * ================================================================================== */
+@each $color, $color-code in $custom-colors {
+
+	.txt-#{$color} {
+		color: $color-code !important;
+	}
+	.bg-#{$color} {
+		background-color: $color-code !important;
+	}
+
 }
 
-.default-bg{
-	background-color: $default-background;
-}
+/* Some other color classes ========================== */
 .white-bg {
-	background-color: $white;
+	background-color: $white !important;
 }
 .white-txt {
 	color: $white !important;
 }
 
 .default-color-bg {
-	background-color: $default-color;
+	background-color: $default-color !important;
 }
 .default-color-txt {
-	color: $default-color;
+	color: $default-color !important;
 }
 
 .main-color-bg {
-	background-color: $main-color;
+	background-color: $main-color !important;
 }
 .main-color-txt {
 	color: $main-color !important;
 }
 
 .secondary-color-bg {
-	background-color: $secondary-color;
+	background-color: $secondary-color !important;
 }
 .secondary-color-txt {
 	color: $secondary-color !important;
 }
 
+/* Font classes =================================== */
+.style-normal {
+	font-style: normal !important;
+}
 .weight-thin {
 	font-weight: 100 !important;
 }
@@ -101,6 +140,7 @@ Example: my-10q means: margin in Y (top and bottom) is 10 quarters of rem = 2.5r
 	font-weight: 900 !important;
 }
 
+/* Image background classes =================== */
 .image-background {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -152,10 +192,6 @@ Example: my-10q means: margin in Y (top and bottom) is 10 quarters of rem = 2.5r
 	background-position: right bottom;
 }
 
-pre {
-  	margin-left: 50px;
-}
-
 .special-type {
 	font-family: $special-type !important;
 }
@@ -164,9 +200,10 @@ pre {
 	font-family: $default-type !important;
 }
 
-/*
-This classes extend the bootstrap grid and adds support for easy 5ths grid columns
-*/
+/* ============================================================ *
+ * These classes extend the bootstrap grid and adds support for *
+ * easy 5ths grid columns                                       *
+ * ============================================================ */
 .col-5ths,
 .col-sm-5ths,
 .col-md-5ths,
